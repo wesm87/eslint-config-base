@@ -16,7 +16,8 @@
   "scripts": {
     "lint": "eslint .",
     "find-unused-rules": "eslint-find-rules --unused",
-    "prepublish": "in-install || yarn find-unused-rules"
+    "prepublish": "in-install || yarn find-unused-rules",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^12.1.0"
